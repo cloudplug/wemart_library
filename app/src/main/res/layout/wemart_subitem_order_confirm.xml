@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_wemart_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <RelativeLayout
+            android:layout_width="88dp"
+            android:layout_height="88dp" >
+
+            <ImageView
+                android:id="@+id/iv_wemart_p"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/side"
+                android:padding="2dp"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_wemart_p"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_centerVertical="true"
+                android:background="#ee000000"
+                android:padding="2dp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:visibility="gone"
+                android:scaleType="fitXY" />
+          
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="2dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_wemart_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:maxLines="2"
+                android:text="装饰衬衫装饰衬衫装饰衬衫"
+                android:textColor="#242424"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_wemart_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_wemart_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/ll_wemart_number_edit"
+                    android:text="138"
+                    android:textColor="#242424"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_wemart_number_edit"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:id="@+id/iv_wemart_cut"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/wemart_jian"
+                        android:scaleType="center" />
+
+                    <TextView
+                        android:id="@+id/tv_wemart_number"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/wemart_jian_jia"
+                        android:gravity="center"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:text="1"
+                        android:textColor="#242424" />
+
+                    <ImageView
+                        android:id="@+id/iv_wemart_add"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/wemart_jia"
+                        android:scaleType="center" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

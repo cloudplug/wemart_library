@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wemart_head"
+    style="@style/wemart_head" >
+
+    <ImageView
+        android:id="@+id/btn_wemart_head_left"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:padding="5dp"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/tv_wemart_head_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="微猫"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/btn_wemart_head_share"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+         android:visibility="invisible"
+        android:src="@drawable/wemart_head_back"
+         />
+
+
+</RelativeLayout>
